@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    iframe{
+        height: 100vh;
+        width: 100vw;
+    }
+    </style>
+</head>
+<body>
+    <!-- <iframe src="https://sudipta0048.github.io/" frameborder="0"></iframe> -->
+    <div>  
+        <dialog id="myFirstDialog" style="width:50%;background-color:#F4FFEF;border:1px dotted black;">  
+        <p><q>I am so clever that sometimes I don't understand a single word of what I am saying.   
+        </q> - <cite>Oscar Wilde</cite></p>  
+        <button id="hide">Close</button>  
+        </dialog>  
+        <button id="show">Show Dialog</button>  
+        </div>  
+          
+        <!-- JavaScript to provide the "Show/Close" functionality -->  
+        <script type="text/JavaScript">  
+        (function() {    
+            var dialog = document.getElementById('myFirstDialog');    
+            document.getElementById('show').onclick = function() {    
+                dialog.show();    
+            };    
+            document.getElementById('hide').onclick = function() {    
+                dialog.close();    
+            };    
+        })();   
+        </script>  
+</body>
+</html>

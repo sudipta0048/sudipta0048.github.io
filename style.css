@@ -1,0 +1,96 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+
+
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 350px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html{
+  padding: 0px;
+  margin: 0px;
+}
+main {
+  
+  color: rgba(248, 248, 248, 0.781);
+  z-index: 99;
+  position: absolute;
+  width: 99%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1, h2, h3, blockquote, p{
+  font-family: elevon, sans-serif;
+  color: #fcbe80;
+    
+  font-weight: 700;
+  font-style: normal;
+ 
+  text-align: center;
+ 
+  
+
+}
+
+canvas {
+  position: fixed;
+  z-index: -9;
+  top: 0;
+  left: 0;
+}
+
+
+.qkz {
+  
+   padding: 10px; 
+  border-radius: 50px;
+  background-color: rgba(109, 253, 73, 0.281); 
+  margin: 100px;
+}
+  
+
+  .fast {
+    
+    padding: 2rem;
+    background: rgba(36, 11, 53, 0.466);
+    border-radius: 50px;
+    border: 5rem;
+    border-color: rgba(94, 255, 0, 0.856);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    
+  }
+ 
+
+  blockquote {
+    margin: 100px;
+    padding: 0;
+   
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote p {
+    color: #362c2221;
+    text-shadow: -5px -2px 2px #fcbe80;
+    font-size: 4rem;
+    display: inline;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .left {
+    grid-column: 6 / 12;
+  }

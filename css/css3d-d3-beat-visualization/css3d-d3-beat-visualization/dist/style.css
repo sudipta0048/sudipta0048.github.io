@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Playball);
+body {
+  background-image: url(https://subtlepatterns.com/patterns/tweed.png);
+  color: #999;
+  text-shadow: 0 1px 0px #333;
+  text-align: center;
+  font-family: "Playball", cursive;
+  font-size: 1.4em;
+  perspective: 700px;
+}
+
+a {
+  color: #00ACED;
+}
+
+._3dbox:nth-child(1) {
+  transform: rotateY(24deg) translateZ(120px);
+}
+
+._3dbox:nth-child(2) {
+  transform: rotateY(48deg) translateZ(120px);
+}
+
+._3dbox:nth-child(3) {
+  transform: rotateY(72deg) translateZ(120px);
+}
+
+._3dbox:nth-child(4) {
+  transform: rotateY(96deg) translateZ(120px);
+}
+
+._3dbox:nth-child(5) {
+  transform: rotateY(120deg) translateZ(120px);
+}
+
+._3dbox:nth-child(6) {
+  transform: rotateY(144deg) translateZ(120px);
+}
+
+._3dbox:nth-child(7) {
+  transform: rotateY(168deg) translateZ(120px);
+}
+
+._3dbox:nth-child(8) {
+  transform: rotateY(192deg) translateZ(120px);
+}
+
+._3dbox:nth-child(9) {
+  transform: rotateY(216deg) translateZ(120px);
+}
+
+._3dbox:nth-child(10) {
+  transform: rotateY(240deg) translateZ(120px);
+}
+
+._3dbox:nth-child(11) {
+  transform: rotateY(264deg) translateZ(120px);
+}
+
+._3dbox:nth-child(12) {
+  transform: rotateY(288deg) translateZ(120px);
+}
+
+._3dbox:nth-child(13) {
+  transform: rotateY(312deg) translateZ(120px);
+}
+
+._3dbox:nth-child(14) {
+  transform: rotateY(336deg) translateZ(120px);
+}
+
+._3dbox:nth-child(15) {
+  transform: rotateY(360deg) translateZ(120px);
+}
+
+/* 3D Cube */
+.space3d {
+  transform-style: preserve-3d;
+  width: 35px;
+  height: 400px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  animation: rot 15s linear infinite;
+}
+
+._3dbox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  transform-style: preserve-3d;
+  opacity: 0.8;
+}
+
+._3dface {
+  overflow: hidden;
+  position: absolute;
+  background: inherit;
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.1), 0 0 50px rgba(0, 0, 0, 0.3);
+  line-height: 35px;
+}
+
+._3dface--front {
+  width: 35px;
+  height: 35px;
+  transform: translate3d(0, 0, 17.5px);
+}
+
+._3dface--top {
+  width: 35px;
+  height: 35px;
+  transform: rotateX(90deg) translate3d(0, 0, 17.5px);
+}
+
+._3dface--bottom {
+  width: 35px;
+  height: 35px;
+  transform: rotateX(-90deg) translate3d(0, 0, 17.5px);
+}
+
+._3dface--left {
+  width: 35px;
+  height: 35px;
+  left: 50%;
+  margin-left: -17.5px;
+  transform: rotateY(-90deg) translate3d(0, 0, 17.5px);
+}
+
+._3dface--right {
+  width: 35px;
+  height: 35px;
+  left: 50%;
+  margin-left: -17.5px;
+  transform: rotateY(90deg) translate3d(0, 0, 17.5px);
+}
+
+._3dface--back {
+  width: 35px;
+  height: 35px;
+  transform: rotateY(180deg) translate3d(0, 0, 17.5px);
+}
+
+@keyframes rot {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

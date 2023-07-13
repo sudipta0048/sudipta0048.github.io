@@ -1,0 +1,262 @@
+body {background:#7e6e48;}
+
+#container {
+perspective: 600px;
+perspective-origin: -20% 20%;
+margin: -2em auto;
+}
+
+/* Pink Butterfly */
+div#butterfly{
+    position absolute;
+    left:0px;
+    top:0px;
+    width: 366px;
+    height: 208px;
+    
+    -webkit-transform: rotate(-20deg)  translate(30px, 60px) scale(0.8, 0.8);
+    -webkit-transform-origin: center center;
+    -moz-transform: rotate(-20deg)  translate(30px, 60px) scale(0.8, 0.8);
+    -moz-transform-origin: center center;
+}
+
+div#rightwing{
+    position: absolute;
+    left:0px;
+    top:0px;
+    width: 178px;
+    height: 208px;
+    background-image: url(http://www.eleqtriq.com/wp-content/static/demos/2010/css3d/img/wing.png);
+    background-repeat:no-repeat;
+    
+    -webkit-transform: rotate3d(0, 0, 0, 180deg); /* Mirror left wing */
+    -webkit-transform-origin: center right;
+    -webkit-animation-name: rightwingani;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    
+    -moz-transform: rotate3d(0, 0, 0, 180deg); /* Mirror left wing */
+    -moz-transform-origin: center right;
+    -moz-animation-name: rightwingani;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes rightwingani {
+    from {
+        -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    30% {
+        -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    50% {
+        -webkit-transform: rotate3d(0, 1, 0, 100deg);
+    }
+    70%{
+        -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    to{
+        -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    }
+}
+
+@-moz-keyframes rightwingani {
+    from {
+        -moz-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    30% {
+        -moz-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    50% {
+        -moz-transform: rotate3d(0, 1, 0, 100deg);
+    }
+    70%{
+        -moz-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    to{
+        -moz-transform: rotate3d(0, 1, 0, 180deg);
+    }
+}
+
+div#leftwing{
+    position: absolute;
+    left:0px;
+    top:0px;
+    width: 178px;
+    height: 208px;
+    background-image: url(http://www.eleqtriq.com/wp-content/static/demos/2010/css3d/img/wing.png);
+    background-repeat: no-repeat;
+    
+    -webkit-transform-origin: top right;
+    -webkit-animation-name: leftwingani;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    
+    -moz-transform-origin: top right;
+    -moz-animation-name: leftwingani;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes leftwingani {
+    from {
+        -webkit-transform: rotate3d(0, 1, 0, 0deg);
+    }
+    30%  {
+        -webkit-transform: rotate3d(0, 1, 0, 0deg);
+    }
+    50% {
+        -webkit-transform: rotate3d(0, 1, 0, 80deg);
+    }
+    70%{
+        -webkit-transform: rotate3d(0, 1, 0, 00deg);
+    }
+    to{
+        -webkit-transform: rotate3d(0, 1, 0, 00deg);
+    }
+}
+
+
+@-moz-keyframes leftwingani {
+    from {
+        -moz-transform: rotate3d(0, 1, 0, 0deg);
+    }
+    30%  {
+        -moz-transform: rotate3d(0, 1, 0, 0deg);
+    }
+    50% {
+        -moz-transform: rotate3d(0, 1, 0, 80deg);
+    }
+    70%{
+        -moz-transform: rotate3d(0, 1, 0, 00deg);
+    }
+    to{
+        -moz-transform: rotate3d(0, 1, 0, 00deg);
+    }
+}
+
+
+
+/* Blue Butterfly */
+#futterbly {
+margin-top: -2em;
+transform: rotateZ(-65deg) rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5);
+transform-origin: 51% 50%;
+left: 0px;
+top: 0px;
+width: 400px;
+height: 238px;
+transform-style: preserve-3d;
+}
+
+.wing {
+transform: rotateX(30deg)  translate3d(-200px, 0px, 0px) rotate3d(0, 1, 0, 160deg);
+transform-origin: top right;
+position: absolute;
+left: 200px;
+top: 0px;
+width: 200px;
+height: 238px;
+background: url(http://blueskyyogaohio.com/wp-content/themes/Chameleon/images/butterfly.png) no-repeat;
+animation-name: rightwing_ani;
+animation-duration: 4s;
+animation-delay: .5s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+
+#futterbly .left{
+transform: rotateX(30deg) 
+			rotate3d(0, 1, 0, 0deg);
+animation-name: leftwing_ani;
+left: 0px;
+top: 0px;
+}
+
+@keyframes rightwing_ani {
+	from {
+		transform: rotateX(30deg) 
+					translate3d(-200px, 0px, 0px)
+					rotate3d(0, 1, 0, 160deg);
+	}
+	20% {
+		transform: rotateX(30deg) 
+					translate3d(-200px, 0px, 0px)
+					rotate3d(0, 1, 0, 160deg);
+	}
+	50% {
+		transform: rotateX(30deg)
+					translate3d(-200px, 0px, 0px) 
+					rotate3d(0, 1, 0, 100deg);
+	}
+	70% {
+		transform: rotateX(30deg)
+					translate3d(-200px, 0px, 0px) 
+					rotate3d(0, 1, 0, 100deg);
+	}
+	to{
+		transform: rotateX(30deg) 
+					translate3d(-200px, 0px, 0px) 
+					rotate3d(0, 1, 0, 160deg);
+	}
+}
+
+@keyframes leftwing_ani {
+	from {
+		transform: rotateX(30deg) 
+					rotate3d(0, 1, 0, 0deg);
+	}
+	20% {
+		transform: rotateX(30deg) 
+					rotate3d(0, 1, 0, 0deg);
+	}
+	50% {
+		transform: rotateX(30deg) 
+					rotate3d(0, 1, 0, 80deg);
+	}
+	70% {
+		transform: rotateX(30deg) 
+					rotate3d(0, 1, 0, 80deg);
+	}
+	to{
+		transform: rotateX(30deg) 
+					rotate3d(0, 1, 0, 00deg);
+	}
+}
+
+
+/* Orange Butterfly */
+.butterfly3 {
+	margin-top: -4em;
+	position: relative;
+	width: 275px;
+	transform: rotateZ(30deg);
+	transform-origin: 50% 50%;
+	left: 4em;
+	top: 0;
+}
+.butterfly3 > div {position:absolute;}
+.butterfly3 img {width:100%;}
+		
+.leftwing {
+	animation:flap-l 4s cubic-bezier(.08,1.47,.65,-0.68) infinite;
+}
+.rightwing {
+	animation:flap-r 4s cubic-bezier(.08,1.47,.65,-0.68) infinite;
+}
+.leftwing, .rightwing {z-index:1;}
+
+@keyframes flap-l {
+			0% {transform:rotateY(0);}
+			50% {transform:rotateY(80deg);}
+			100% {transform:rotateY(0);}
+}
+@keyframes flap-r {
+			0% {transform:rotateY(0); }
+			50% {transform:rotateY(-80deg);}
+			100% {transform:rotateY(0);}
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - css3D-D3 beat visualization</title>
+  <link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>CSS 3D music visualization using D3.js</h1>
+<div class='space3d'>
+  <div class='_3dbox'>
+    <div class='_3dface _3dface--front'></div>
+    <div class='_3dface _3dface--back'></div>
+    <div class='_3dface _3dface--left'></div>
+    <div class='_3dface _3dface--right'></div>
+    <div class='_3dface _3dface--top'></div>
+    <div class='_3dface _3dface--bottom'></div>
+  </div>
+  <div class='_3dbox'>
+    <div class='_3dface _3dface--front'></div>
+    <div class='_3dface _3dface--back'></div>
+    <div class='_3dface _3dface--left'></div>
+    <div class='_3dface _3dface--right'></div>
+    <div class='_3dface _3dface--top'></div>
+    <div class='_3dface _3dface--bottom'></div>
+  </div>
+  <div class='_3dbox'>
+    <div class='_3dface _3dface--front'></div>
+    <div class='_3dface _3dface--back'></div>
+    <div class='_3dface _3dface--left'></div>
+    <div class='_3dface _3dface--right'></div>
+    <div class='_3dface _3dface--top'></div>
+    <div class='_3dface _3dface--bottom'></div>
+  </div>
+  <div class='_3dbox'>
+    <div class='_3dface _3dface--front'></div>
+    <div class='_3dface _3dface--back'></div>
+    <div class='_3dface _3dface--left'></div>
+    <div class='_3dface _3dface--right'></div>
+    <div class='_3dface _3dface--top'></div>
+    <div class='_3dface _3dface--bottom'></div>
+  </div>
+  <div class='_3dbox'>
+    <div class='_3dface _3dface--front'></div>
+    <div class='_3dface _3dface--back'></div>
+    <div class='_3dface _3dface--left'></div>
+    <div class='_3dface _3dface--right'></div>
+    <div class='_3dface _3dface--top'></div>
+    <div class='_3dface _3dface--bottom'></div>
+  </div>
+  <div class='_3dbox'>
+    <div class='_3dface _3dface--front'></div>
+    <div class='_3dface _3dface--back'></div>
+    <div class='_3dface _3dface--left'></div>
+    <div class='_3dface _3dface--right'></div>
+    <div class='_3dface _3dface--top'></div>
+    <div class='_3dface _3dface--bottom'></div>
+  </div>
+  <div class='_3dbox'>
+    <div class='_3dface _3dface--front'></div>
+    <div class='_3dface _3dface--back'></div>
+    <div class='_3dface _3dface--left'></div>
+    <div class='_3dface _3dface--right'></div>
+    <div class='_3dface _3dface--top'></div>
+    <div class='_3dface _3dface--bottom'></div>
+  </div>
+  <div class='_3dbox'>
+    <div class='_3dface _3dface--front'></div>
+    <div class='_3dface _3dface--back'></div>
+    <div class='_3dface _3dface--left'></div>
+    <div class='_3dface _3dface--right'></div>
+    <div class='_3dface _3dface--top'></div>
+    <div class='_3dface _3dface--bottom'></div>
+  </div>
+  <div class='_3dbox'>
+    <div class='_3dface _3dface--front'></div>
+    <div class='_3dface _3dface--back'></div>
+    <div class='_3dface _3dface--left'></div>
+    <div class='_3dface _3dface--right'></div>
+    <div class='_3dface _3dface--top'></div>
+    <div class='_3dface _3dface--bottom'></div>
+  </div>
+  <div class='_3dbox'>
+    <div class='_3dface _3dface--front'></div>
+    <div class='_3dface _3dface--back'></div>
+    <div class='_3dface _3dface--left'></div>
+    <div class='_3dface _3dface--right'></div>
+    <div class='_3dface _3dface--top'></div>
+    <div class='_3dface _3dface--bottom'></div>
+  </div>
+  <div class='_3dbox'>
+    <div class='_3dface _3dface--front'></div>
+    <div class='_3dface _3dface--back'></div>
+    <div class='_3dface _3dface--left'></div>
+    <div class='_3dface _3dface--right'></div>
+    <div class='_3dface _3dface--top'></div>
+    <div class='_3dface _3dface--bottom'></div>
+  </div>
+  <div class='_3dbox'>
+    <div class='_3dface _3dface--front'></div>
+    <div class='_3dface _3dface--back'></div>
+    <div class='_3dface _3dface--left'></div>
+    <div class='_3dface _3dface--right'></div>
+    <div class='_3dface _3dface--top'></div>
+    <div class='_3dface _3dface--bottom'></div>
+  </div>
+  <div class='_3dbox'>
+    <div class='_3dface _3dface--front'></div>
+    <div class='_3dface _3dface--back'></div>
+    <div class='_3dface _3dface--left'></div>
+    <div class='_3dface _3dface--right'></div>
+    <div class='_3dface _3dface--top'></div>
+    <div class='_3dface _3dface--bottom'></div>
+  </div>
+  <div class='_3dbox'>
+    <div class='_3dface _3dface--front'></div>
+    <div class='_3dface _3dface--back'></div>
+    <div class='_3dface _3dface--left'></div>
+    <div class='_3dface _3dface--right'></div>
+    <div class='_3dface _3dface--top'></div>
+    <div class='_3dface _3dface--bottom'></div>
+  </div>
+  <div class='_3dbox'>
+    <div class='_3dface _3dface--front'></div>
+    <div class='_3dface _3dface--back'></div>
+    <div class='_3dface _3dface--left'></div>
+    <div class='_3dface _3dface--right'></div>
+    <div class='_3dface _3dface--top'></div>
+    <div class='_3dface _3dface--bottom'></div>
+  </div>
+</div>
+<br><br><br><br>
+An accident by <a href="https://twitter.com/chinchang457">Kushagra Gour</a>
+<!-- partial -->
+  <script src='https://d3js.org/d3.v3.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
