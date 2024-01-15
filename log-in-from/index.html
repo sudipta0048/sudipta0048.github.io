@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <label for="login-signup-from">
+    <div class="login-btn">
+        <h2>Log in or sign up</h2>
+    </div>
+    </label>
+
+         <input type="checkbox" id="login-signup-from" style="display: none;">
+         
+            <div class="login-signup">
+                <label for="login-signup-from">
+                <div class="from-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+                </div>
+                </label>
+                <input type="checkbox" id="login-or-signup" style="display: none;transform: scale(0);">
+                <form class="login-from">
+                    <h1>Log in</h1>
+                    <input type="text" required placeholder="user name">
+                    <input type="password" required placeholder="password">
+                    <input type="submit" value="Log in">
+                    <label for="login-or-signup">
+                        <div><h2>Sign up</h2></div>
+                    </label>
+                </form>
+                <form class="signup-from">
+                    <h1>Sign up</h1>
+                    <input type="text" required placeholder="fast name">
+                    <input type="text" required placeholder="last name">
+                    <input type="email" required placeholder="email">
+                    <input type="password" required placeholder="password">
+                    <input type="password" required placeholder="re-type password">
+                    <input type="submit" value="Sign up">
+                    <label for="login-or-signup">
+                        <div><h2>Log in</h2></div>
+                    </label>
+                </form>
+            </div>
+         
+</body>
+</html>

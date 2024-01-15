@@ -1,0 +1,120 @@
+.banner-wapper
+{
+    
+    display: none;
+    background: linear-gradient(25deg,#2c9743,#0c3e6d,#bd4343);
+    
+    width: 100%;
+    /* height: 150vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+    
+}
+
+.main-banner
+{
+    
+    position: relative;
+    width: 80%;
+    height: 300px;
+    background-color: rgba(216, 196, 235, 0.267);
+    top: 140px;
+    /* left: 5%; */
+    text-align: center;
+    backdrop-filter: blur(5px) ;
+    -webkit-backdrop-filter: blur(5px);
+    filter: hue-rotate(240deg);
+    border-radius: 5px;
+    box-shadow: -1px -1px 3px 1px #00000025,
+                inset 0px 0px 5px 2px #00000017;
+    
+     filter: drop-shadow(1px 1px 0px #00000071);
+    
+}
+.main-banner h1
+{
+    text-transform: uppercase;
+    
+    margin-top: 100px;
+    background: linear-gradient(60deg,#70a786,#98f3bc,#70a786);
+}
+.main-banner h3
+{
+    background: linear-gradient(30deg,#9cdfb8,#caeca9,#9cdfb8);
+    
+    margin-top: 20px;
+    margin-bottom: 10%;
+}
+.main-banner h3,.main-banner h1
+{
+    display: inline-block;
+    
+    color: transparent;
+    
+    filter: hue-rotate(240deg);
+    -webkit-background-clip: text;
+    filter: drop-shadow(2px 2px 2px #463f3f94);
+}
+.image-continer
+{
+    position: relative;
+    margin-top: 280px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: #19314759;
+    /* filter: blur(25px); */
+    border-radius: 5px;
+}
+.image-continer div
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.image-continer div div
+{
+    
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    background-color: #62cc794b;
+    border: 1px solid #6d8297;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s;
+}
+.image-continer div div:hover
+{
+    filter: drop-shadow(1px 1px 5px #00000094) brightness(110%);
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+.image-continer div div h2
+{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(var(--i),#ff9fe1b7 0%,#8827ffaf 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    filter: drop-shadow(1px 1px 2px #00000094) brightness(150%);
+
+
+}
+.image-continer div div img
+{
+    
+    z-index: 1;
+    height: 200px;
+    width: 200px;
+    margin: 30px;
+    
+}

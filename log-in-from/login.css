@@ -1,0 +1,169 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    background-image: url(./6.jpg);
+    background-size: cover;
+    
+}
+.login-btn 
+{
+    width: 300px;
+    float: right;
+    margin: 5px;
+    height: 50px;
+    text-align: center;
+    background-color: rgb(158, 180, 57);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 4px rgba(65, 35, 15, 0.295);
+    color: hsl(180, 42%, 17%);
+    text-shadow: 2px 2px 0px #0000001f  ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-btn:hover 
+{
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.349);
+    background-color: rgb(123, 141, 45);
+}
+.login-btn:active 
+{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.349);
+}
+.login-btn:active~ .login-btn h2
+{
+    filter: brightness(340%);
+}
+.login-signup
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-110vw);
+    transition: 1s;
+}
+.login-signup::before
+{
+    margin: 0;
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(25px);
+    z-index: -1;
+
+    
+}
+.login-signup .from-close
+{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 20px;
+    right: 20px;
+    border-radius: 5px;
+    border-color: #220a0ad3;
+    background-color: transparent;
+    backdrop-filter: hue-rotate(15deg) brightness(140%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-signup .from-close:active
+{
+    backdrop-filter: brightness(340%);
+}
+
+.login-from ,
+ .signup-from
+{
+    position: absolute;
+    height: 450px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    backdrop-filter: hue-rotate(15deg) brightness(200%);
+    box-shadow: 0px 0px 4px 5px #00000048;
+}
+.login-from > * , .signup-from > *
+{
+    margin:15px;
+}
+.login-from > h1, .signup-from > h1
+{
+    margin: 20px;
+    color: #704848d8;
+    filter: brightness(150%);
+    text-shadow: 2px 2px 3px #000000be;
+}
+.login-from input , .signup-from input
+{
+    background-color: #ffffff80;
+    height: 30px;
+    width: 80%;
+    border-radius: 5px;
+    border-color: #00000062;
+    color: #2c1c1ce8;
+    font-weight: 500;
+    font-size: large;
+}
+.login-from input[type="submit"], .signup-from input[type="submit"]
+{
+    width: 30%;
+    background-color: #b6b437d3;
+    font-size: larger;
+}
+ label div h2 
+{
+    color: #634f4f;
+    cursor: pointer;
+}
+ label div h2:active 
+{
+    filter: brightness(340%);
+}
+.signup-from
+{
+    transform: translateX(-110vw);
+    height: 550px;
+    transition: 1s;
+}
+.login-from
+{
+    transform: translateX(0px);
+    transition: 1s;
+}
+
+input#login-signup-from:checked~ .login-signup
+{
+    transform: translateX(0px);
+    transition: 1s;
+}
+input#login-or-signup:checked~ .signup-from
+{
+    transform: translateX(0px);
+    transition: 1s;
+}
+input#login-or-signup:checked~ .login-from
+{
+    transform: translateX(-110vw);
+    transition: 1s;
+}
