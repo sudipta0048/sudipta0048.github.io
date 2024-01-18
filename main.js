@@ -39,7 +39,7 @@ import * as THREE from 'three';
 
 						render();
 
-						// model
+						
 
 						const loader = new GLTFLoader();
 						loader.load( 'Untitled.glb', function ( gltf ) {
@@ -83,7 +83,7 @@ import * as THREE from 'three';
 
 			}
 
-			//
+			
 
 			function render() {
 
