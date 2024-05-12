@@ -18,17 +18,17 @@ nav.innerHTML = `<div class="nav-logo">
 </div>`;
 
 
-var photos = document.querySelectorAll(".photo");
-
-let myarray = new Array(photos.length);
-for( let i = 0; i < photos.length; i++){
-  myarray[i] = i * 360;
-  photos[i].style.transform = `translateX(` + myarray[i] + `px)`;
-}
-
-
-
-function photoSlider(){
+ /* var photos = document.querySelectorAll(".photo");
+  
+  let myarray = new Array(photos.length);
+  for( let i = 0; i < photos.length; i++){
+    myarray[i] = i * 360;
+    photos[i].style.transform = `translateX(` + myarray[i] + `px)`;
+  }
+  
+  
+  
+  function photoSlider(){
   
   for(let i = 0; i < photos.length; i++){
     myarray[i] -= 4;
@@ -57,4 +57,4 @@ function stopInterval() {
 var photoContainer = document.querySelector(".photo-wapper");
 
 photoContainer.addEventListener("mouseenter",stopInterval);
-photoContainer.addEventListener("mouseleave",playInterval);
+photoContainer.addEventListener("mouseleave",playInterval);*/
