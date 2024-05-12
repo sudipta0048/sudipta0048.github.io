@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 :root {
     --pramary-color: #47d492;
     --body-color:#0a530d;
@@ -38,21 +41,37 @@
     height: 100%;
     width: 100%;
     border-radius: 5px;
+    display: flex;
     overflow: hidden; 
     box-shadow: -1px -1px 5px 7px #00000025,
                 inset 2px 2px 5px 5px #0a0101;    
     
     
 }
-.photo-wapper
+.photo-wapper 
 {
+    --photoWidth:360px;
     position: relative;
+    flex-shrink: 0;
     display: flex;
+    width: calc(var(--photoWidth)*13);
+    align-items: center;
+	justify-content: space-around;
     border-radius: 5px;
+    animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+    
 }
 .photo
 {
-    position: absolute;
+    
     height: 360px;
     width: 360px;
     background-color: #0a530d;
@@ -71,6 +90,13 @@
 {
     filter: blur(5px);  
     transition: 0.4s;
+
+    
+}
+.forPhoto:hover{
+    .photo-wapper{
+        animation-play-state: paused;
+    }
 }
 .jh-card
 {
