@@ -18,15 +18,3 @@ nav.innerHTML = `<div class="nav-logo">
 
 </div>`;
 
-const gradientBox = document.querySelector('.banner-wapper');
-var gradientAngel = 1;
-function rotatGradient(){
-    gradientBox.style.background = 'linear-gradient('+ gradientAngel +'deg, #2c9743 0%, #0c3e6d 100%,#bd4343 50%)';
-    if(gradientAngel == 360){
-        gradientAngel = 0;
-    }else{
-        gradientAngel += 0.5;
-    }
-    requestAnimationFrame(rotatGradient);
-}
-rotatGradient();

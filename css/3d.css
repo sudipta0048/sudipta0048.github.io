@@ -1,0 +1,39 @@
+.jh-card
+{
+    position: relative;
+    margin: 4%;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    float: right;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: -1px -1px 5px 2px #00000025,
+                inset 0px 0px 5px 2px #000000a8;
+
+
+}
+
+.zx-card
+{
+    
+    background-color: var(--pramary-color);
+    border-radius: 5px;
+    box-shadow: -1px -1px 5px 7px #00000025,
+                inset 2px 2px 5px 5px #0a0101;  
+}
+.zx-card div ,.zx-card div canvas
+{
+    border-radius: 5px; 
+}
+.viewbox-text{
+    position: relative;
+    margin-top: 550px;
+    margin-left: 50%;
+}
+.viewbox-text h1{
+
+    background: linear-gradient(30deg,#081608,#80d32c,#616b4a);
+    color: transparent;
+    -webkit-background-clip: text;
+
+}

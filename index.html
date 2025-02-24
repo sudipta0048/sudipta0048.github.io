@@ -4,52 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peolove</title>
+
+    <link rel="shortcut icon" href="img/Untitled-2.png" type="image/x-icon">
     
     <!-- <link rel="stylesheet" href="navbar.css"> -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="marquee.css">
-    <link rel="icon" href="/Untitled-2.png">
-    <link rel="stylesheet" href="nav.css">
-    <style>
-
-        *, *:before, *:after {
-             
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box !important;
-            text-decoration: none !important;
-            font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
-            }
-        a
-        {
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/marquee.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/3d.css">
+    
+    
+    
+    
+    
 </head>
 <body>
     
     <div class="blur"></div>
-    <nav></nav>
+    <nav>
+        <div class="nav-logo">
+        <h1>peolove</h1>
+        </div>
+        <input type="checkbox" id="check">
 
-    <div class="banner-wapper">
-        <div class="main-banner">
-            <div>
-            <h1>wellcome to my website</h1>
-            <br/>
-            <h3>I'm sudipta mondal. This is my protfolio</h3>
-            </div>
+        <label for="check">
             
-     </div>
-        <div class="image-continer">
-            <div>
-                <div><img src="./img/icons8-html-logo-240.svg" alt="html"><h2 style="--i:30deg;">html</h2></div>
-                <div><img src="./img/icons8-css-logo.svg" alt="css"><h2 style="--i:60deg;">css</h2></div>
-                <div><img src="./img/icons8-javascript.svg" alt="javascript"><h2 style="--i:90deg;">javascript</h2></div>
-                <div><img src="./img/icons8-wordpress.svg" alt="wordpress"><h2 style="--i:120deg;">wordpress</h2></div>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+        
+        </label>
+        
+        <div class="blur-slider"></div>
+        <div class="nav-links">
+        <a class="active" href="#"><span>home</span></a>
+        <a href="#"><span>about</span></a>
+        <a href="#"><span>cool</span></a>
+        <a href="#"><span>contract</span></a>
+        
+        </div>
+    </nav>
+
+    
+    <div class="body-container">
+
+        <div class="banner-wapper">
+            <div class="main-banner">
+                <div>
+                <h1>wellcome to my website</h1>
+                <br/>
+                <h3>I'm sudipta mondal. This is my protfolio</h3>
+                </div>
+                
+         </div>
+            <div class="image-continer">
+                <div>
+                    <div><img src="./img/icons8-html-logo-240.svg" alt="html"><h2 style="--i:30deg;">html</h2></div>
+                    <div><img src="./img/icons8-css-logo.svg" alt="css"><h2 style="--i:60deg;">css</h2></div>
+                    <div><img src="./img/icons8-javascript.svg" alt="javascript"><h2 style="--i:90deg;">javascript</h2></div>
+                    <div><img src="./img/icons8-wordpress.svg" alt="wordpress"><h2 style="--i:120deg;">wordpress</h2></div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="body-container">
+
+
+
         <div class="container">
            <div class="board">
                <div class="forPhoto">
@@ -86,11 +105,12 @@
                </div>
            </div>
         </div>
+        
         <div class="jh-card">
-        <div class="zx-card">
-           <div class="my-name"></div>
+            <div class="zx-card">
+            <div class="my-name"></div>
+            </div>
         </div>
-       </div>
        <div class="viewbox-text"><h1>3D viewbox</h1></div>
     </div>
    
@@ -106,8 +126,8 @@
           }
         }
       </script>
-      <script type="module" src="main.js"></script>
+      <script type="module" src="3d.js"></script>
     
-    <script src="./script1.js"></script>
+    <!-- <script src="./script1.js"></script> -->
 </body>
 </html>
