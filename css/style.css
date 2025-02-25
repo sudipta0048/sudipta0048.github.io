@@ -36,7 +36,7 @@
     
     position: relative;
     width: 80%;
-    height: 300px;
+    padding: 20px;
     background-color: #11142e;
     top: 140px;
     /* left: 5%; */
@@ -49,22 +49,38 @@
                 inset 0px 0px 5px 2px #00000017;
     
      filter: drop-shadow(1px 1px 0px #00000071);
+
+
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-wrap: wrap;  
     
+}
+.sudipta
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url("../photo/sudipta.jpg");
+    margin-right: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .main-banner h1 
 {
     text-transform: uppercase;
-    
-    margin-top: 100px;
     background: linear-gradient(60deg,#70a786,#79ac47,#70a786);
 }
-.main-banner h3 
+/* .main-banner h3 
 {
     background: linear-gradient(30deg,#9cdfb8,#79ac47,#9cdfb8);
     
     margin-top: 20px;
     margin-bottom: 10%;
-}
+} */
 .main-banner h3,.main-banner h1
 {
     display: inline-block;
@@ -116,7 +132,7 @@
     transition: 0.3s;
 }
 .image-continer div div h2
-{
+/* {
     margin-bottom: 20px;
     text-transform: uppercase;
     background: linear-gradient(var(--i),#ff9fe1b7 0%,#8827ffaf 100%);
@@ -125,7 +141,7 @@
     filter: drop-shadow(1px 1px 2px #00000094) brightness(150%);
 
 
-}
+} */
 .image-continer div div img
 {
     

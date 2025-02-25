@@ -37,3 +37,19 @@
     -webkit-background-clip: text;
 
 }
+
+.loading
+{
+   position: relative;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading img
+{
+    margin: 50px;
+    width: 200px;
+    height: 450px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}

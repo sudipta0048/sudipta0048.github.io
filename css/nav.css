@@ -2,7 +2,7 @@
 
 
 :root {
-    --nav-color: #0a530d;
+    --nav-color: #11142e;
     
 }
 nav
@@ -15,16 +15,16 @@ nav
     background-color: var(--nav-color);
     background-size: 2px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 2%;
     border-radius: 0px 0px 5px 5px;
     z-index: 15;
 }
 nav .nav-logo
 {
+    margin-top: -4px;
     
     margin-left: 5%;
+
     background-color: #6f4e3700;
 }
 nav .nav-logo h1
@@ -44,9 +44,9 @@ nav .nav-logo h1
 }
 nav .nav-links
 {
-    margin-right: 2%;
+    width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     background-color: #6f4e3700;
     box-sizing: border-box;
@@ -123,15 +123,18 @@ nav label:hover .hamburger
         margin: 3px;
         width: 230px;
     }
-    nav label
+    nav .nav-logo
     {
-        
-        margin-right: 5%;
+        flex: 5;
+    }
+    nav  label
+    {
+        flex: 2;
         background-color: #6f4e3700;
         transform: translateX(50%);
-        
 
     } 
+
     
     nav .nav-links
     {

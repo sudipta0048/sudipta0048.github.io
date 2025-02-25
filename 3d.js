@@ -5,7 +5,10 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
 
 			let camera, scene, renderer;
-
+				const loading = document.querySelector(".loading");
+				let innerWidthL = window.innerWidth/100;
+				    innerWidthL = innerWidthL * 80;
+					loading.style.width = innerWidthL + "px";
 			init();
 			render();
 
@@ -14,7 +17,7 @@ import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
 				// const container = document.createElement( 'div' );
 				// document.body.appendChild( container );
 				// container.classList.add("unknown");
-                const container = document.querySelector(".my-name");
+                const container = document.querySelector(".three-container"); 
                 let innerWidthF = window.innerWidth/100;
                 innerWidthF = innerWidthF * 80;
 
@@ -63,6 +66,7 @@ import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
 				renderer.setSize( innerWidthF, 500 );
 				renderer.toneMapping = THREE.ACESFilmicToneMapping;
 				renderer.toneMappingExposure = 1;
+				container.innerHTML = "";
 				container.appendChild( renderer.domElement );
 
 				const controls = new OrbitControls( camera, renderer.domElement );
