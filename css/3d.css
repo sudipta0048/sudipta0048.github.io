@@ -45,7 +45,7 @@
     justify-content: center;
     align-items: center;
 }
-.loading img
+.loading svg
 {
     margin: 50px;
     width: 200px;
