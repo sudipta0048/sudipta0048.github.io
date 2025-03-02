@@ -53,7 +53,7 @@
 
      
     display: flex;
-    justify-content: center;
+    justify-content: safe center;
     align-items: center;  
     flex-wrap: wrap;  
     
@@ -64,7 +64,6 @@
     width: 200px;
     border-radius: 50%;
     background-image: url("../photo/sudipta.jpg");
-    margin-right: 50px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,7 +71,8 @@
 .main-banner h1 
 {
     text-transform: uppercase;
-    background: linear-gradient(60deg,#70a786,#79ac47,#70a786);
+    background: linear-gradient(60deg,#44b471,#dff1cc,#782adf);
+    margin: 20px;
 }
 /* .main-banner h3 
 {
